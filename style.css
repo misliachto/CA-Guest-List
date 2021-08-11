@@ -8,11 +8,17 @@ h1 {
     font-family: 'Festive';
     font-size: 48px;
 }
+h3 {
+    margin: 5px;
+    padding: 5px;
+}
 body {
     margin: 0;
-    text-align: center;
     font-family: 'Bona Nova', serif;
     background-color: #FBE7C6;
+}
+h1, p {
+    text-align: center;
 }
 .form-container, .guest-list-container {
     background-color: #fff;
@@ -21,19 +27,40 @@ body {
     margin: 40px auto;
     padding: 30px 20px;
     border-radius: 2px;
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
 }
-input{
+input {
     padding: 15px 10px;
     font-size: 16px;
     margin: 5px;
+    width: 100%;
 }
-button {
+.form-container .add-buttons .remove-buttons {
     background-color: #fff;
     font-size: 16px;
     margin: 5px;
     padding: 5px 5px;
-    width: 50%;
-    grid-template-columns: 1fr 1fr;
+    width: 150px;
+    font-size: 14px;
 }
+.guest-list-container h2 {
+    margin-top: 0;
+    width: 100%;
+    text-align: left;
+}
+li {
+    font-size: 24px;
+    padding: 5px 5px;
+}
+.form-container div {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: flex-start;
+}
+.form-container button {
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
