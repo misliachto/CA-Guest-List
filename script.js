@@ -30,6 +30,12 @@ function removeLastGuest() {
     outputInviteeList();
     return
 }
+//  --removing first name from arra
+function removeFirstGuest() {
+    inviteeArray = inviteeArray.shift();
+    outputInviteeList();
+    return
+}
 
 // --outputting content
 function outputInviteeList() {
@@ -41,6 +47,7 @@ function outputInviteeList() {
 btnAddFirst.addEventListener("click", addFirstGuest);
 btnAddLast.addEventListener("click", addLastGuest);
 btnRemoveLast.addEventListener("click", removeLastGuest);
+btnRemoveFirst.addEventListener("click", removeFirstGuest);
 
 
 
