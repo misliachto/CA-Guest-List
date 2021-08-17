@@ -45,7 +45,7 @@ const reverseList = () => {
 }
 // --outputting content
 function outputInviteeList() {
-    inviteeList.innerHTML = inviteeArray.toString();
+    inviteeList.innerHTML = inviteeArray.join(" ");
 }
 
 // EVENTS
@@ -55,8 +55,6 @@ btnAddLast.addEventListener("click", addLastGuest);
 btnRemoveLast.addEventListener("click", removeLastGuest);
 btnRemoveFirst.addEventListener("click", removeFirstGuest);
 btnReverseList.addEventListener("click", reverseList);
-
-
 
 /*
 - “Remove from - to” - to remove list items from certain index to certain point in the list.
